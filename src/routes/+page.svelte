@@ -35,47 +35,47 @@
 
 	</div>
 
-	<div class="w-full h-auto flex flex-col">
+	<div class="w-full h-auto flex flex-col font-fraunces">
 		<div class="flex flex-row w-full h-auto">
-			<div class="w-1/2 h-auto">
-				<div>Transform your brand</div>
-				<div>
+			<div class="w-1/2 h-auto p-40 flex flex-col items-start gap-6">
+				<div class="text-4xl font-bold text-black">Transform your brand</div>
+				<div class='font-barlow text-lg'>
 					We are a full-service creative agency specializing in helping brands grow fast. 
 					Engage your clients through compelling visuals that do most of the marketing for you.
 				</div>
-				<button>Learn more</button>
+				<button class="uppercase">Learn more</button>
 			</div>
 			<img src={egg_bg} alt="" class="w-1/2 h-full" />
 		</div>
 	</div>
 
-	<div class="w-full h-auto flex flex-col">
+	<div class="w-full h-auto flex flex-col font-fraunces">
 		<div class="flex flex-row w-full h-auto">
 			<img src={cup} alt="" class="w-1/2 h-full" />
-			<div class="w-1/2 h-auto">
-				<div>Stand out to the right audience</div>
-				<div>
+			<div class="w-1/2 h-auto p-40 flex flex-col items-start gap-6">
+				<div class="text-4xl font-bold text-black">Stand out to the right audience</div>
+				<div class="font-barlow text-lg">
 					Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
 				</div>
-				<button>Learn more</button>
+				<button class="uppercase">Learn more</button>
 			</div>
 		</div>
 	</div>
 
 	<div class="w-full h-auto flex flex-col">
 		<div class="flex flex-row w-full h-auto">
-			<div class="w-1/2 h-full bg-cherry">
+			<div class="w-1/2 h-full bg-cherry relative flex items-center justify-center">
 				<img src={cherry} alt="" class="w-full h-full" />
-				<div>
-					<span>Graphic design</span>
-					<span>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</span>
+				<div class='absolute bottom-10 flex flex-col items-center justify-center gap-4 md:w-2/3 w-11/12'>
+					<span class="text-4xl font-bold text-black font-fraunces">Graphic design</span>
+					<span class="font-barlow text-lg text-center">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</span>
 				</div>
 			</div>
-			<div class="w-1/2 h-full bg-orange">
+			<div class="w-1/2 h-full bg-orange relative flex items-center justify-center">
 				<img src={orange} alt="" class="w-full h-full" />
-				<div>
-					<span>Photography</span>
-					<span>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</span>
+				<div class='absolute bottom-10 flex flex-col items-center justify-center gap-4 md:w-2/3 w-11/12'>
+					<span class="text-4xl font-bold text-black font-fraunces">Photography</span>
+					<span class="font-barlow text-lg text-center">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</span>
 				</div>
 			</div>
 		</div>
