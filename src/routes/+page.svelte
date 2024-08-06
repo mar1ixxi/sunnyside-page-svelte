@@ -6,6 +6,20 @@
 	import cup from '$lib/images/desktop/image-stand-out.jpg';
 	import cherry from '$lib/images/desktop/image-graphic-design.jpg';
 	import orange from '$lib/images/desktop/image-photography.jpg';
+
+	import firstPerson from '$lib/images/image-emily.jpg';
+	import secondPerson from '$lib/images/image-jennie.jpg';
+	import thirdPerson from '$lib/images/image-thomas.jpg';
+
+	import milkBottles from '$lib/images/desktop/image-gallery-milkbottles.jpg'
+	import orangeSecond from '$lib/images/desktop/image-gallery-orange.jpg'
+	import conesSecond from '$lib/images/desktop/image-gallery-cone.jpg'
+	import sugarCubes from '$lib/images/desktop/image-gallery-sugarcubes.jpg'
+
+	import facebook from '$lib/images/icon-facebook.svg'
+	import instagram from '$lib/images/icon-instagram.svg'
+	import pinterest from '$lib/images/icon-pinterest.svg'
+	import twitter from '$lib/images/icon-twitter.svg'
 </script>
 
 <svelte:head>
@@ -81,33 +95,33 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col">
-		<h3>Client testimonials</h3>
+	<div class="flex flex-col md:w-10/12 w-11/12 h-auto py-10 gap-20 items-center justify-center">
+		<h3 class="text-2xl font-fraunces uppercase">Client testimonials</h3>
 
 		<div class="flex flex-row gap-8">
-			<div>
-				<img src="" alt="">
-				<div>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</div>
-				<div>
-					<span>Emily R.</span>
+			<div class="flex flex-col gap-8 items-center">
+				<img src={firstPerson} alt="" class="w-16 h-16 rounded-full">
+				<div class="text-center">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</div>
+				<div class="flex flex-col gap-1 text-center">
+					<span class="font-fraunces">Emily R.</span>
 					<span>Marketing Director</span>
 				</div>
 			</div>
 	
-			<div>
-				<img src="" alt="">
-				<div>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</div>
-				<div>
-					<span>Thomas S.</span>
+			<div class="flex flex-col gap-8 items-center">
+				<img src={secondPerson} alt="" class="w-16 h-16 rounded-full">
+				<div class="text-center">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</div>
+				<div class="flex flex-col gap-1 text-center">
+					<span class="font-fraunces">Thomas S.</span>
 					<span>Chief Operating Officer</span>
 				</div>
 			</div>
 	
-			<div>
-				<img src="" alt="">
-				<div>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</div>
-				<div>
-					<span>Jennie F.</span>
+			<div class="flex flex-col gap-8 items-center">
+				<img src={thirdPerson} alt="" class="w-16 h-16 rounded-full">
+				<div class="text-center">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</div>
+				<div class="flex flex-col gap-1 text-center">
+					<span class="font-fraunces">Jennie F.</span>
 					<span>Business Owner</span>
 				</div>
 			</div>
@@ -115,18 +129,26 @@
 
 	</div>
 
-	<div>
-		<img src="" alt="">
-		<div>
-			<span></span>
-			<span></span>
-			<span></span>
+	<div class="flex flex-col items-center gap-5 bg-[#90D4C5]">
+		<div class="flex flex-row w-full h-auto">
+			<img src={milkBottles} alt="" class="w-3/12 h-auto">
+			<img src={orangeSecond} alt="" class="w-3/12 h-auto">
+			<img src={conesSecond} alt="" class="w-3/12 h-auto">
+			<img src={sugarCubes} alt="" class="w-3/12 h-auto">
 		</div>
-		<div>
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
+		<div class="flex flex-col gap-4 pt-20">
+			<img src={logo} alt="">
+			<div class="flex flex-row gap-6">
+				<span>About</span>
+				<span>Services</span>
+				<span>Projects</span>
+			</div>
+		</div>
+		<div class="flex flex-row gap-4 pb-20">
+			<img src={facebook} alt="" class="w-6 h-6">
+			<img src={instagram} alt="" class="w-6 h-6">
+			<img src={twitter} alt="" class="w-6 h-6">
+			<img src={pinterest} alt="" class="w-6 h-6">
 		</div>
 	</div>
 
