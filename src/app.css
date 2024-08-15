@@ -130,3 +130,11 @@ button:focus:not(:focus-visible) {
 .font-barlow {
   font-family: var(--font-barlow);
 }
+
+.red-btn .line {
+  display: none;
+}
+
+.red-btn:hover .line {
+  display: flex;
+}
