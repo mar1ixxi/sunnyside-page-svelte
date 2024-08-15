@@ -131,10 +131,28 @@ button:focus:not(:focus-visible) {
   font-family: var(--font-barlow);
 }
 
-.red-btn .line {
+.red-btn:hover .yellowLine {
+  background-color: #FAD400;
+}
+
+.red-btn:hover .redLine {
+  background-color: #FE7867;
+}
+
+/* hamburger stying for mobile view */
+
+.hamburger .triangle {
   display: none;
 }
 
-.red-btn:hover .line {
+.hamburger .tab-section {
+  display: none;
+}
+
+.hamburger:hover .triangle {
+  display: flex;
+}
+
+.hamburger:hover .tab-section {
   display: flex;
 }

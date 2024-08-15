@@ -2,6 +2,7 @@
 	import logo from '$lib/images/logo.svg';
 	import down_arrow from '$lib/images/icon-arrow-down.svg';
 	import hamburger from '$lib/images/icon-hamburger.svg';
+	import triangle from '$lib/images/triangle-arrow.svg';
 
 	import main_bg from '$lib/images/desktop/image-header.jpg';
 	import mobile_bg from '$lib/images/mobile/image-header.jpg';
@@ -50,7 +51,7 @@
 
 	<div class="w-full md:min-h-screen min-h-auto h-full flex flex-col gap-20 items-center justify-center relative">
 
-		<nav class="absolute flex flex-row justify-between top-4 w-full h-auto md:px-12 px-6 py-2">
+		<nav class="absolute flex flex-row justify-between top-4 w-full h-auto md:px-12 px-8 py-2">
 			<img src={logo} alt="" class="w-auto md:h-8 h-5">
 
 			<div class="md:flex hidden font-barlow font-semibold text-white text-base gap-12 items-center justify-center">
@@ -60,8 +61,17 @@
 				<span class="py-3 px-6 rounded-full transition-all bg-white hover:bg-[#5AC8FF] text-black hover:text-white font-fraunces uppercase cursor-pointer">Contact</span>
 			</div>
 
-			<div class="md:hidden flex dashboard">
-				<img src={hamburger} alt="" class="h-4">
+			<div class="md:hidden flex hamburger">
+				<img src={hamburger} alt="" class="h-4 transition-all">
+
+				<img src={triangle} alt="" class="absolute right-[8.8%] top-10 triangle">
+				<div class='tab-section absolute top-16 left-[8%] z-10 py-6 flex flex-col font-barlow font-medium text-[#A7ABAE] text-lg gap-6 items-center justify-center bg-white w-10/12 h-auto'>
+					<span class="cursor-pointer">About</span>
+					<span class="cursor-pointer">Services</span>
+					<span class="cursor-pointer">Projects</span>
+					<span class="py-3 px-6 rounded-full transition-all bg-[#FAD400] text-black hover:text-white font-fraunces uppercase cursor-pointer">Contact</span>
+				</div>
+
 			</div>
 
 		</nav>
@@ -79,7 +89,7 @@
 	<div class="w-full h-auto flex flex-col font-fraunces">
 		<div class="flex md:flex-row flex-col-reverse w-full h-auto">
 			
-			<div class="md:w-1/2 w-full h-auto md:p-40 p-5 flex flex-col md:items-start items-center gap-6 md:text-left text-center">
+			<div class="md:w-1/2 w-full h-auto md:p-40 p-5 md:py-40 py-20 flex flex-col md:items-start items-center gap-6 md:text-left text-center">
 				<div class="text-4xl font-bold text-black">Transform your brand</div>
 				<div class='font-barlow text-lg font-medium text-[#5A636C]'>
 					We are a full-service creative agency specializing in helping brands grow fast. 
@@ -87,7 +97,7 @@
 				</div>
 				<button class="red-btn transition-all relative px-2 flex justify-center">
 					<div class="uppercase relative z-10 text-black">Learn more</div>
-					<span class=' absolute top-3 w-full h-2.5 rounded line z-0 bg-[#FAD400]' />
+					<span class='bg-[#FCEFB9] absolute top-3 w-full h-2.5 rounded z-0 yellowLine' />
 				</button>
 			</div>
 
@@ -103,14 +113,14 @@
 			<img src={cup} alt="" class="md:w-1/2 w-full md:flex hidden h-full" />
 			<img src={mobile_cup} alt="" class="md:w-1/2 w-full md:hidden flex h-full" />
 
-			<div class="md:w-1/2 w-full h-auto md:p-40 p-5 flex flex-col md:items-start items-center gap-6 md:text-left text-center">
+			<div class="md:w-1/2 w-full h-auto md:p-40 p-5 md:py-40 py-20 flex flex-col md:items-start items-center gap-6 md:text-left text-center">
 				<div class="text-4xl font-bold text-black">Stand out to the right audience</div>
 				<div class="font-barlow text-lg font-medium text-[#5A636C]">
 					Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
 				</div>
 				<button class="red-btn transition-all relative px-2 flex justify-center">
 					<div class="uppercase relative z-10 text-black">Learn more</div>
-					<span class=' absolute top-3 w-full h-2.5 rounded line z-0 bg-[#FE7867]' />
+					<span class=' md:flex hidden absolute top-3 w-full h-2.5 rounded z-0 bg-[#FBD8CF] redLine' />
 				</button>
 			</div>
 		</div>
@@ -191,7 +201,7 @@
 		</div>
 
 		<div class="flex flex-col items-center justify-center gap-8 pt-16">
-			<img src={logo} alt="" class="w-52">
+			<img src={logo} alt="" class="md:w-52 w-40">
 			<div class="flex flex-row gap-10 font-medium text-lg font-barlow">
 				<span class=" transition-all text-[#458C7E] hover:text-white cursor-pointer">About</span>
 				<span class=" transition-all text-[#458C7E] hover:text-white cursor-pointer">Services</span>
